@@ -1,0 +1,43 @@
+/* pages/search/search.wxss */
+.search{
+    height:1500rpx;
+    width:100%;
+    background-color: antiquewhite
+  }
+  image{
+    height: 80rpx;
+    width:90rpx;
+  }
+.upl {
+    margin-top: 10rpx;
+    height: 100rpx;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.767);
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: none;
+    border-right: none;
+    padding: 10rpx 40rpx 0 20rpx;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    
+} 
+
+.uploader-text {
+    width: 100%;
+    font-size: 35rpx;
+    font-family: fantasy;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+  width:70%;
+  margin-top:15rpx;
+  margin-left: 20rpx;
+}
+.right {
+  color: rgb(153, 153, 153);
+  margin-left: 25%;
+  margin-top:15rpx;
+}

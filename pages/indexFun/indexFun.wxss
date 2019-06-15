@@ -1,0 +1,38 @@
+
+page {
+    background: #fff;
+  }
+
+
+
+.table1 {
+    border: 0px solid darkgray;
+    font-size: 12px;
+  }
+  .tr1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 2rem;
+    align-items: center;
+    background-color: rgba(127, 251, 255, 0.205);
+    border: #fff solid 1rpx;
+  }
+  .td1 {
+      width:50%;
+      justify-content: center;
+      text-align: center;
+  }
+  .bg-w1{
+    background: snow;
+  }
+   
+  .th1 {
+    width: 50%;
+    justify-content: center;
+    background: #3366FF;
+    color: #fff;
+    display: flex;
+    height: 2rem;
+    align-items: center;
+  }

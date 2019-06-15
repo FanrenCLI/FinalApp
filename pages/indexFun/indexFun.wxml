@@ -1,0 +1,14 @@
+<block wx:if="{{choose==2}}">
+    <view class="table1">
+        <view class="tr1 bg-w1">
+            <view class="th1">科目</view>
+            <view class="th1">综合成绩</view>
+        </view>
+        <block wx:for="{{gradelist[0]}}" wx:for-index="idx">
+            <view class="tr1">
+                <view class="td1">{{gradelist[0][idx]}}</view>
+                <view class="td1">{{gradelist[1][idx]}}</view>
+            </view>
+        </block>
+    </view>
+</block>

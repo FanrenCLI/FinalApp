@@ -1,0 +1,26 @@
+<view class="page">
+    <view class="page__hd">
+        <view>
+            <image style="width:170px;height:150px;" src="../../image/asd.png" />
+        </view>
+    </view>
+    <view class="page__bd">
+        <view class="section">
+            <input type="text"  placeholder="学号" auto-focus="{{true}}" bindinput="idinput" />
+        </view>
+        <view class="section">
+            <input type="text"  placeholder="教务管理密码" password="true" bindinput="pwdinput"/>
+        </view>
+        <view class="section">
+            <view class="btn-area">
+                <button type="primary" open-type="getUserInfo" bindtap="login_in">登录</button>
+            </view>
+            <view class="btn-area">
+                <button type="primary" bindtap="login_in_wx">微信登录</button>
+            </view>
+            <view class="btn-area">
+                <button type="default">忘记密码</button>
+            </view>
+        </view>
+    </view>
+</view>
