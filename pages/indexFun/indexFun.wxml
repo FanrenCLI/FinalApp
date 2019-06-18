@@ -4,11 +4,14 @@
             <view class="th1">科目</view>
             <view class="th1">综合成绩</view>
         </view>
-        <block wx:for="{{gradelist[0]}}" wx:for-index="idx">
-            <view class="tr1">
-                <view class="td1">{{gradelist[0][idx]}}</view>
-                <view class="td1">{{gradelist[1][idx]}}</view>
-            </view>
+        <block wx:for="{{gradelist}}" wx:for-item="item1" wx:for-index="idx">
+            <view class="tr2">{{termlist[idx]}}</view>
+            <block wx:for="{{gradelist[idx][0]}}" wx:for-index="ids" >  
+                <view class="tr1">
+                    <view class="td1">{{gradelist[idx][0][ids]}}</view>
+                    <view class="td1">{{gradelist[idx][1][ids]}}</view>
+                </view>
+            </block>
         </block>
     </view>
 </block>

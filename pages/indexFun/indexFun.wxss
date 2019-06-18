@@ -9,6 +9,15 @@ page {
     border: 0px solid darkgray;
     font-size: 12px;
   }
+  .tr2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 2rem;
+    align-items: center;
+    background-color: rgba(178, 255, 127, 0.205);
+    border: #fff solid 1rpx;
+  }
   .tr1 {
     display: flex;
     width: 100%;

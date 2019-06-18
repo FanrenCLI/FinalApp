@@ -8,7 +8,7 @@ App({
 
   // },
   globalData: {
-    mainurl:"http://localhost:8888/",
+    mainurl:"https://fanrencli.cn/",
     stuid:"",
     username:"",
     pwd:"",

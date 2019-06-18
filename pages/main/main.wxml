@@ -1,9 +1,9 @@
 <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true" indicator-active-color="#FFF" indicator-color="rgba(255,255,255, .4)">
   <swiper-item>
-    <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2690199312,2418186946&fm=200&gp=0.jpg" class='img_ins'></image>
+    <image src="../../image/b2.png" class='img_ins'></image>
   </swiper-item>
   <swiper-item>
-    <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=477883837,3258063885&fm=11&gp=0.jpg" class='img_ins'></image>
+    <image src="../../image/b2.png" class='img_ins'></image>
   </swiper-item>
 </swiper>
 <view class='center_table'>

@@ -2,7 +2,8 @@ let app =  getApp();
 
   Page({
     data:{
-        gradelist:[]
+      termlist:['大一上学期','大一下学期','大二上学期','大二下学期','大三上学期','大三下学期','大四上学期','大四下学期'],
+      gradelist:[]
     },
     onLoad:function(options){
         var that = this;
@@ -21,21 +22,28 @@ let app =  getApp();
         wx.request({
           url:app.globalData.mainurl+'grade',
           data:{
-            // stuid:app.globalData.stuid,
-            // pwd:app.globalData.pwd
-            stuid:'1622022033',
-            pwd:'320621199704096734'
+            stuid:app.globalData.stuid,
+            pwd:app.globalData.pwd
+            // stuid:'1622022035',
+            // pwd:'lu8023lu'
           },
           success(res){
-            console.log(res.data)
-            var gradename=[]
-            var grade=[]
-            for(var i in res.data){
-              gradename.push(i)
-              grade.push(res.data[i])
+            var arr=[]
+            for(var n in res.data){
+              arr.push(n)
             }
-            that.data.gradelist.push(gradename)
-            that.data.gradelist.push(grade)
+            arr.sort()
+            for(var i in res.data){
+              var gradename=[]
+              var grade=[]
+              for(var j in res.data[i]){
+                gradename.push(j)
+                grade.push(res.data[i][j])
+              }
+              that.data.gradelist[arr.indexOf(i)]=[]
+              that.data.gradelist[arr.indexOf(i)].push(gradename)
+              that.data.gradelist[arr.indexOf(i)].push(grade)
+            }
             that.setData({
               gradelist:that.data.gradelist
             })
