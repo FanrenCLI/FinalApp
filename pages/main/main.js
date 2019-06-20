@@ -3,15 +3,15 @@ let app = getApp();
 Page({
   data: {
     "index_list": [{
-      "url": "../main_detail/learnVideo/learnVideo",
-      "img": "video.png",
-      "name": '学习视频',
+      "url": "../indexFun/indexFun",
+      "img": "cj.png",
+      "name": '成绩查询',
       "id": 0,
       "dis": ''
     }, {
       "url": "../main_detail/jxkp/jxkp",
-      "img": "jiaoxue.png",
-      "name": '教学考评',
+      "img": "kb.png",
+      "name": '课表查询',
       "id": 1,
       "dis": ''
     }, {

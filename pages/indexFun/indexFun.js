@@ -7,14 +7,7 @@ let app =  getApp();
     },
     onLoad:function(options){
         var that = this;
-        that.setData({
-          choose: options.choose,
-        })
-        switch (that.data.choose) {
-            case "2":
-              wx.setNavigationBarTitle({ title: '成绩查询' });
-              break;
-        }
+        wx.setNavigationBarTitle({ title: '成绩查询' });
         wx.showToast({
           title: '查询中...',
           icon: 'loading'

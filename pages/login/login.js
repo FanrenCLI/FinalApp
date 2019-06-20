@@ -96,13 +96,20 @@ Page({
                             pwd: that.data.pwd
                         },
                         success: function (res) {
-                            if(res.data!="failure"){
+                            console.log(res.data.stuid)
+                            if(res.data.stuid!=undefined){
                                 app.globalData.stuid=res.data.stuid;
                                 app.globalData.username=res.data.name;
                                 app.globalData.pwd=res.data.pwd;
                                 that.getUserInfomation();
+                                wx.hideToast({})
+                            }else{
+                                wx.showToast({
+                                    title:'登录失败',
+                                    icon:'none',
+                                    duration:2000
+                                })
                             }
-                            wx.hideToast({})
                         },
                         fail(res) {
                             console.log("请求失败")
@@ -136,13 +143,19 @@ Page({
                         },
                         success: function (res) {
                             console.log(res.data)
-                            if(res.data!="failure"){
+                            if(res.data.stuid!=undefined){
                                 app.globalData.stuid=res.data.stuid;
                                 app.globalData.username=res.data.name;
                                 app.globalData.pwd=res.data.pwd
                                 that.getUserInfomation();
+                                wx.hideToast({})
+                            }else{
+                                wx.showToast({
+                                    title:'登录失败',
+                                    icon:'none',
+                                    duration:2000
+                                })
                             }
-                            wx.hideToast({})
                         },
                         fail(res) {
                             wx.showToast({

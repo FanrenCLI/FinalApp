@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/index/index",
     "pages/main/main",
     "pages/usercenter/usercenter",
     "pages/indexFun/indexFun"
@@ -21,18 +20,11 @@
         "selectedIconPath": "image/main_s.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "信息查询",
-        "iconPath": "image/search.png",
-        "selectedIconPath": "image/search_s.png"
-      },
-      {
         "pagePath": "pages/usercenter/usercenter",
         "text": "个人中心",
         "iconPath": "image/user.png",
         "selectedIconPath": "image/user_s.png"
       }
     ]
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }
