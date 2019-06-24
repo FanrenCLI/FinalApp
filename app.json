@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/main/main",
+    "pages/login/login",
+    "pages/curriculum/curriculum",
     "pages/usercenter/usercenter",
     "pages/indexFun/indexFun"
   ],
@@ -26,5 +27,6 @@
         "selectedIconPath": "image/user_s.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

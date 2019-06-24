@@ -1,0 +1,87 @@
+@import '../../utils/copy.wxss';
+@import '../../utils/ripples.min.wxss';
+  .card-box{
+    background-image: url("https://fanrencli.cn/1.png");
+  }
+  .line_1{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.7;
+  }
+  .line_2{
+    
+    opacity: 0.4;
+    height: 104rpx;
+    border-bottom: 1px dashed #6e6e6e;
+  }
+  
+  .flex-item {
+    width: 110rpx;
+    height: 80rpx;
+  }
+  
+  .kcb-item {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    
+  }
+  .smalltext {
+    font-size: 8pt;
+    color: #333;
+    padding-left: 2px;
+    line-height: 40rpx;
+  }
+  
+  .top {
+    background-color: #ebf8ff;
+    color: #333;
+    height: 80rpx;
+    font-size: 28rpx;
+    opacity: 0.7;
+  }
+  
+  .top-text view {
+    line-height: 80rpx;
+    text-align: center;
+    display: block;
+    font-size: 28rpx;
+  }
+  
+  .top-text {
+    float: left;
+    width: 16.6%;
+    font-size: 9pt;
+    align-items: center;
+  }
+  .left {
+    width: 124rpx;
+    height: 104rpx;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #e9e8e8;
+    color: #666;
+    font-size: 24rpx;
+  }
+  page {
+    background: #fff;
+  }
+  .color0 {
+    background: #ffebf1;
+  }
+  
+  .color1 {
+    background: #ebffeb;
+  }
+  
+  .color2{
+    background: #ebf8ff;
+  }
+  
+  .color3 {
+    background: #fff1eb;
+  }

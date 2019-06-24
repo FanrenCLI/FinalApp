@@ -1,0 +1,50 @@
+<view class="weui-cells weui-cells1" >
+    <view class="weui-cell weui-cell_input" style="height:80rpx">
+        <view class="weui-cell__hd">
+            <view class="weui-label">课程名称</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" value='{{kcmc}}' />
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input" style="height:80rpx">
+        <view class="weui-cell__hd">
+            <view class="weui-label">课程地点</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view class="weui-input">{{skdd}}</view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input" style="height:80rpx">
+        <view class="weui-cell__hd">
+            <view class="weui-label">课程时间</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view class="weui-input">{{week_time}}</view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input" style="height:80rpx">
+        <view class="weui-cell__hd">
+            <view class="weui-label">课程老师</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view class="weui-input">{{teacher}}</view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input" style="height:80rpx">
+        <view class="weui-cell__hd">
+            <view class="weui-label">周次</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view class="weui-input">{{zhouci}}</view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input" style="height:80rpx">
+        <view class="weui-cell__hd">
+            <view class="weui-label">节次</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view class="weui-input">{{day_time}}</view>
+        </view>
+    </view>
+</view>

@@ -9,7 +9,7 @@ Page({
       "id": 0,
       "dis": ''
     }, {
-      "url": "../main_detail/jxkp/jxkp",
+      "url": "../curriculum/curriculum",
       "img": "kb.png",
       "name": '课表查询',
       "id": 1,
