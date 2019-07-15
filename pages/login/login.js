@@ -3,13 +3,17 @@ let app = getApp();
 Page({
     data: {
         id: "",
-        pwd: ""
+        pwd: "",
+        idcard:""
     },
     idinput: function (e) {
         this.setData({ id: e.detail.value })
     },
     pwdinput: function (e) {
         this.setData({ pwd: e.detail.value })
+    },
+    idcardinput: function (e) {
+        this.setData({ idcard: e.detail.value })
     },
     getUserInfomation: function () {
         // 获取用户信息
@@ -92,15 +96,14 @@ Page({
                         },
                         data: {
                             code: res.code,
-                            id: that.data.id,
-                            pwd: that.data.pwd
+                            stuid: that.data.id,
+                            pwd: that.data.pwd,
+                            idcard:that.data.idcard
                         },
                         success: function (res) {
-                            console.log(res.data.stuid)
-                            if(res.data.stuid!=undefined){
-                                app.globalData.stuid=res.data.stuid;
-                                app.globalData.username=res.data.name;
-                                app.globalData.pwd=res.data.pwd;
+                            console.log(res.data)
+                            if(res.data!='0'){
+                                app.globalData.localCookie=res.data
                                 that.getUserInfomation();
                                 wx.hideToast({})
                             }else{
@@ -142,11 +145,8 @@ Page({
                             code: res.code,
                         },
                         success: function (res) {
-                            console.log(res.data)
-                            if(res.data.stuid!=undefined){
-                                app.globalData.stuid=res.data.stuid;
-                                app.globalData.username=res.data.name;
-                                app.globalData.pwd=res.data.pwd
+                            if(res.data!='0'){
+                                app.globalData.localCookie=res.data
                                 that.getUserInfomation();
                                 wx.hideToast({})
                             }else{

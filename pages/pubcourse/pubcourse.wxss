@@ -1,0 +1,62 @@
+/* pages/index/quary/jiaoshi.wxss */
+
+Page{
+  background-image: url("https://fanrencli.cn/11.png")
+}
+
+  .section1 {
+    background: #fff;
+    margin: 15rpx 15rpx;
+    overflow:hidden;
+    display: flex;  
+    border-radius: 20px;  
+    border: 2px solid #fff;  
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+  
+  }
+  /* ==================================================== */
+  .table {
+    border: 0px solid darkgray;
+    font-size: 22rpx;
+    padding: 10rpx;
+    width: 200%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tr {
+    display: flex;
+    justify-content: left;
+    height: 80rpx;
+    align-items: center;
+    margin-top: 30rpx;
+    border-radius: 10rpx;
+    border: 1rpx solid skyblue
+  }
+  .tr1 {
+    display: flex;
+    justify-content: left;
+    height: 80rpx;
+    align-items: center;
+    border-radius: 10rpx;
+    border: 1rpx solid skyblue
+  }
+  .td1 {
+      width:20%;
+      margin-left: 10rpx;
+      justify-content: center;
+      text-align: center;
+  }
+  .bg-w{
+    background: #3066FF;
+    color: #FFFFFF;
+    font-size: 26rpx;
+  }
+  .bg-g{
+    background: #E6F3F9;
+  }
+  .btn{
+      height:70rpx;
+      line-height: 70rpx;
+      font-size: 30rpx;
+  }

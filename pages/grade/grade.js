@@ -3,7 +3,8 @@ let app =  getApp();
   Page({
     data:{
       termlist:['大一上学期','大一下学期','大二上学期','大二下学期','大三上学期','大三下学期','大四上学期','大四下学期'],
-      gradelist:[]
+      gradelist:[],
+      gradeToollist:[]
     },
     onLoad:function(options){
         var that = this;
@@ -15,32 +16,28 @@ let app =  getApp();
         wx.request({
           url:app.globalData.mainurl+'grade',
           data:{
-            stuid:app.globalData.stuid,
-            pwd:app.globalData.pwd
-            // stuid:'1622022035',
-            // pwd:'lu8023lu'
+            // cookie:'ASP.NET_SessionId=btb5g2rtdmddl2berxzlvcyb'
+            cookie:app.globalData.localCookie
+          },
+          method:'POST',
+          header: {
+            "Content-Type": "application/x-www-form-urlencoded"
           },
           success(res){
-            var arr=[]
-            for(var n in res.data){
-              arr.push(n)
-            }
-            arr.sort()
-            for(var i in res.data){
-              var gradename=[]
-              var grade=[]
-              for(var j in res.data[i]){
-                gradename.push(j)
-                grade.push(res.data[i][j])
+            if(res.data!='0'){
+              that.setData({
+                gradelist:res.data
+              })
+              let termSet=new Set()
+              for(let i=0;i<res.data.length;i++){
+                termSet.add(res.data[i].xq)
               }
-              that.data.gradelist[arr.indexOf(i)]=[]
-              that.data.gradelist[arr.indexOf(i)].push(gradename)
-              that.data.gradelist[arr.indexOf(i)].push(grade)
+              let list= Array.from(termSet).sort()
+              that.setData({
+                gradeToollist:list,
+                termlist:that.data.termlist.slice(0,list.length)
+              })
             }
-            that.setData({
-              gradelist:that.data.gradelist
-            })
-            wx.hideToast();
           },
           fail(res){
             wx.showToast({

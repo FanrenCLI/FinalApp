@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/main/main",
     "pages/login/login",
+    "pages/main/main",
+    "pages/pubcourse/pubcourse",
     "pages/curriculum/curriculum",
     "pages/usercenter/usercenter",
-    "pages/indexFun/indexFun"
+    "pages/grade/grade"
   ],
   "window": {
     "backgroundTextStyle": "light",

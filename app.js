@@ -7,9 +7,10 @@ App({
   //   wx.setStorageSync('logs', logs)
   // },
   globalData: {
-    mainurl:"http://localhost:8080/",
+    mainurl:"https://fanrencli.cn/",
     stuid:"",
     username:"",
     pwd:"",
+    localCookie:''
   }
 })

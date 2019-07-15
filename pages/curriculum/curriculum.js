@@ -10,7 +10,7 @@ Page({
     cardRightIn: false,
     cardLeftIn: false,
     currentIndex: 0,
-    sw_kc: [{ kcmc: '地理信息系统', skdd: '主102', zhouci: '1-18周', xqj: '2', skjc: '1', teacher: '陆杰', bg: 'color0', skcd: '3' }],
+    sw_kc: [],
   },
   onLoad: function (params) {
     var that = this
@@ -21,8 +21,8 @@ Page({
     wx.request({
       url: app.globalData.mainurl + 'curr',
       data: {
-        // stuid:app.globalData.stuid
-        stuid: "1622022035"
+        stuid:app.globalData.stuid
+        // stuid: "1622022035"
       },
       success(res) {
         wx.hideToast();

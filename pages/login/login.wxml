@@ -9,6 +9,9 @@
             <input type="text"  placeholder="学号" auto-focus="{{true}}" bindinput="idinput" />
         </view>
         <view class="section">
+            <input type="text"  placeholder="身份证号"  bindinput="idcardinput" />
+        </view>
+        <view class="section">
             <input type="text"  placeholder="教务管理密码" password="true" bindinput="pwdinput"/>
         </view>
         <view class="section">
@@ -17,9 +20,6 @@
             </view>
             <view class="btn-area">
                 <button type="primary" open-type="getUserInfo" bindtap="login_in_wx">微信登录</button>
-            </view>
-            <view class="btn-area">
-                <button type="default">忘记密码</button>
             </view>
         </view>
     </view>

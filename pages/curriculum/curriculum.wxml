@@ -1,45 +1,45 @@
 <view class="con-wrap ripple {{cardRightIn?'fadeInRight':''}} {{cardLeftIn?'fadeInLeft':''}}" wx:for="{{week_kecheng}}" wx:if="{{index==currentIndex}}" wx:key="{{item._id}}">
-        <view class='card-box'>
-            <view class="top">
-                <view class="top-text">
-                    <view>
-                        <view>节次</view>
-                    </view>
-                </view>
-                <view wx:for="{{item.week_day}}" class="top-text">
-                    <view>
-                        <view>{{item.week}}</view>
-                    </view>
+    <view class='card-box'>
+        <view class="top">
+            <view class="top-text">
+                <view>
+                    <view>节次</view>
                 </view>
             </view>
-            <view style="display:flex;opacity: 0.7;">
-                <view style="background-color:#f8f8f8;color:#666666;">
-                    <view wx:for="{{times}}" class="left">{{item.name}}</view>
+            <view wx:for="{{item.week_day}}" class="top-text">
+                <view>
+                    <view>{{item.week}}</view>
                 </view>
-                <view class="line_1">
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                    <view class="line_2"></view>
-                </view>
-                <!-- 课表 -->
-                <view wx:for="{{sw_kc}}">
-                    <view class="flex-item kcb-item {{item.bg}}" data-statu="open" style="margin-left:{{(item.xqj-1)*125+15}}rpx;margin-top:{{(item.skjc-1)*104+18}}rpx;height:{{item.skcd*100-10}}rpx;">
-                        <navigator url='lesson?kcmc={{item.kcmc}}&skdd={{item.skdd}}&teacher={{item.teacher}}&week_time={{item.xqj}}&day_time={{item.skjc}}-{{item.skjc+item.skcd-1}}&zhouci={{item.zhouci}}'>
-                            <view class="smalltext">{{item.kcmc}}</view>
-                            <view class="smalltext">{{item.skdd}}</view>
-                            <view class="smalltext">{{item.zhouci}}</view>
-                            <view class="smalltext">{{item.teacher}}</view>
-                        </navigator>
-                    </view>
+            </view>
+        </view>
+        <view style="display:flex;opacity: 0.7;">
+            <view style="background-color:#f8f8f8;color:#666666;">
+                <view wx:for="{{times}}" class="left">{{item.name}}</view>
+            </view>
+            <view class="line_1">
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+                <view class="line_2"></view>
+            </view>
+            <!-- 课表 -->
+            <view wx:for="{{sw_kc}}">
+                <view class="flex-item kcb-item {{item.bg}}" data-statu="open" style="margin-left:{{(item.xqj-1)*125+15}}rpx;margin-top:{{(item.skjc-1)*104+18}}rpx;height:{{item.skcd*100-10}}rpx;">
+                    <navigator url='lesson?kcmc={{item.kcmc}}&skdd={{item.skdd}}&teacher={{item.teacher}}&week_time={{item.xqj}}&day_time={{item.skjc}}-{{item.skjc+item.skcd-1}}&zhouci={{item.zhouci}}'>
+                        <view class="smalltext">{{item.kcmc}}</view>
+                        <view class="smalltext">{{item.skdd}}</view>
+                        <view class="smalltext">{{item.zhouci}}</view>
+                        <view class="smalltext">{{item.teacher}}</view>
+                    </navigator>
                 </view>
             </view>
         </view>
     </view>
+</view>

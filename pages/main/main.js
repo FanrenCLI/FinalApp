@@ -3,7 +3,7 @@ let app = getApp();
 Page({
   data: {
     "index_list": [{
-      "url": "../indexFun/indexFun",
+      "url": "../grade/grade",
       "img": "cj.png",
       "name": '成绩查询',
       "id": 0,
@@ -15,9 +15,9 @@ Page({
       "id": 1,
       "dis": ''
     }, {
-      "url": "../main_detail/resource/resource",
-      "img": "resource.png",
-      "name": '资源下载',
+      "url": "../pubcourse/pubcourse",
+      "img": "gxk.png",
+      "name": '公选课',
       "id": 2,
       "dis": ''
     }, {
