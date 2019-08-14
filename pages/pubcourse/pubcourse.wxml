@@ -2,29 +2,64 @@
 <view class="section1">
     <scroll-view scroll-x="true">
         <view class="table">
+            <!-- ======================================================= -->
+            <view class="tr bg-w" style="background:rgb(131, 20, 231)">
+                <view class="td1">我的课程</view>
+                <view class="td1" style="width:35%">上课时间地点</view>
+                <view class="td1" style="width:10%">学时&学分</view>
+                <view class="td1" style="width:10%">教师</view>
+                <view class="td1" style="width:10%">人数</view>
+                <view class="td1" style="width:10%">取消</view>
+            </view>
+            <block wx:for="{{myleisureClass}}" wx:for-item="item">
+                <view class="tr1 bg-g" wx:if="{{index % 2 == 1}}">
+                    <view class="td1">{{item.kcmc}}</view>
+                    <view class="td1" style="width:35%">{{item.sksj}}</view>
+                    <view class="td1" style="width:10%">{{item.xs}}-{{item.xf}}</view>
+                    <view class="td1" style="width:10%">{{item.jsxm}}</view>
+                    <view class="td1" style="width:10%">{{item.xxrs}}</view>
+                    <button class="btn" type="primary" bindtap="DeleteMajor" data-oid="{{item.oid}}">
+                        删除
+                    </button>
+                </view>
+                <view class="tr1" wx:else>
+                    <view class="td1">{{item.kcmc}}</view>
+                    <view class="td1" style="width:35%">{{item.sksj}}</view>
+                    <view class="td1" style="width:10%">{{item.xs}}-{{item.xf}}</view>
+                    <view class="td1" style="width:10%">{{item.jsxm}}</view>
+                    <view class="td1" style="width:10%">{{item.xxrs}}</view>
+                    <button class="btn" type="primary" bindtap="DeleteMajor" data-oid="{{item.oid}}">
+                        删除
+                    </button>
+                </view>
+            </block>
+            <!-- ======================================================= -->
             <view class="tr bg-w">
-                <view class="td1">课程名称</view>
-                <view class="td1">上课时间地点</view>
-                <view class="td1">已选人数</view>
-                <view class="td1">限选人数</view>
-                <view class="td1">报名</view>
+                <view class="td1">可选课程</view>
+                <view class="td1" style="width:35%">上课时间地点</view>
+                <view class="td1" style="width:10%">学时&学分</view>
+                <view class="td1" style="width:10%">教师</view>
+                <view class="td1" style="width:10%">人数</view>
+                <view class="td1" style="width:10%">报名</view>
             </view>
             <block wx:for="{{leisureClass}}" wx:for-item="item">
                 <view class="tr1 bg-g" wx:if="{{index % 2 == 1}}">
-                    <view class="td1">{{item.place}}</view>
-                    <view class="td1">{{item.number}}</view>
-                    <view class="td1">{{item.seat}}</view>
-                    <view class="td1">{{item.seat}}</view>
-                    <button class="btn" type="primary" bindtap="leaveRoom" data-place="{{item.place}}">
+                    <view class="td1">{{item.kcmc}}</view>
+                    <view class="td1" style="width:35%">{{item.sksj}}</view>
+                    <view class="td1" style="width:10%">{{item.xs}}-{{item.xf}}</view>
+                    <view class="td1" style="width:10%">{{item.jsxm}}</view>
+                    <view class="td1" style="width:10%">{{item.sxrs}}/{{item.xxrs}}</view>
+                    <button class="btn" type="primary" bindtap="ChooseMajor" data-jxrwid="{{item.jxrwid}}">
                         报名
                     </button>
                 </view>
                 <view class="tr1" wx:else>
-                    <view class="td1">{{item.place}}</view>
-                    <view class="td1">{{item.number}}</view>
-                    <view class="td1">{{item.seat}}</view>
-                    <view class="td1">{{item.seat}}</view>
-                    <button class="btn" type="primary" bindtap="leaveRoom" data-place="{{item.place}}">
+                    <view class="td1">{{item.kcmc}}</view>
+                    <view class="td1" style="width:35%">{{item.sksj}}</view>
+                    <view class="td1" style="width:10%">{{item.xs}}-{{item.xf}}</view>
+                    <view class="td1" style="width:10%">{{item.jsxm}}</view>
+                    <view class="td1" style="width:10%">{{item.sxrs}}/{{item.xxrs}}</view>
+                    <button class="btn" type="primary" bindtap="ChooseMajor" data-jxrwid="{{item.jxrwid}}">
                         报名
                     </button>
                 </view>

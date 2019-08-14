@@ -21,7 +21,24 @@
             </view>
             <view class="weui-cell__ft">{{stu_id}}</view>
         </view>
-
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <text>班级</text>
+            </view>
+            <view class="weui-cell__ft">{{bj}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <text>院系</text>
+            </view>
+            <view class="weui-cell__ft">{{yx}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <text>联系作者</text>
+            </view>
+            <view class="weui-cell__ft">VX:yishijiezhilin</view>
+        </view>
     </view>
     <view class="sign-out-container">
         <button type="warn" size="default" class="sign-out-btn" bindtap="sign_out">注销</button>

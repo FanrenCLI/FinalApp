@@ -1,0 +1,60 @@
+<!-- pages/index/quary/jiaoshi.wxml -->
+<view class="section1">
+    <scroll-view scroll-x="true">
+        <block wx:if="{{myleisureClass.length>0}}">
+            <view class="table">
+                <!-- ======================================================= -->
+                <view class="tr bg-w" style="background:rgb(131, 20, 231)">
+                    <view class="td1">我的课程</view>
+                    <view class="td1" style="width:35%">上课时间地点</view>
+                    <view class="td1" style="width:10%">学时&学分</view>
+                    <view class="td1" style="width:10%">教师</view>
+                    <view class="td1" style="width:10%">人数</view>
+                </view>
+                <block wx:for="{{myleisureClass}}" wx:for-item="item">
+                    <view class="tr1 bg-g" wx:if="{{index % 2 == 1}}">
+                        <view class="td1">{{item.kcmc}}</view>
+                        <view class="td1" style="width:35%">{{item.sksj}}</view>
+                        <view class="td1" style="width:10%">{{item.xs}}-{{item.xf}}</view>
+                        <view class="td1" style="width:10%">{{item.jsxm}}</view>
+                        <view class="td1" style="width:10%">{{item.sxrs}}/{{item.xxrs}}</view>
+                    </view>
+                    <view class="tr1" wx:else>
+                        <view class="td1">{{item.kcmc}}</view>
+                        <view class="td1" style="width:35%">{{item.sksj}}</view>
+                        <view class="td1" style="width:10%">{{item.xs}}-{{item.xf}}</view>
+                        <view class="td1" style="width:10%">{{item.jsxm}}</view>
+                        <view class="td1" style="width:10%">{{item.sxrs}}/{{item.xxrs}}</view>
+                    </view>
+                </block>
+                <!-- ======================================================= -->
+                <view class="tr bg-w">
+                    <view class="td1">可选课程</view>
+                    <view class="td1" style="width:35%">上课时间地点</view>
+                    <view class="td1" style="width:10%">学时&学分</view>
+                    <view class="td1" style="width:10%">教师</view>
+                    <view class="td1" style="width:10%">人数</view>
+                </view>
+                <block wx:for="{{leisureClass}}" wx:for-item="item">
+                    <view class="tr1 bg-g" wx:if="{{index % 2 == 1}}">
+                        <view class="td1">{{item.kcmc}}</view>
+                        <view class="td1" style="width:35%">{{item.sksj}}</view>
+                        <view class="td1" style="width:10%">{{item.xs}}-{{item.xf}}</view>
+                        <view class="td1" style="width:10%">{{item.jsxm}}</view>
+                        <view class="td1" style="width:10%">{{item.sxrs}}/{{item.xxrs}}</view>
+                    </view>
+                    <view class="tr1" wx:else>
+                        <view class="td1">{{item.kcmc}}</view>
+                        <view class="td1" style="width:35%">{{item.sksj}}</view>
+                        <view class="td1" style="width:10%">{{item.xs}}-{{item.xf}}</view>
+                        <view class="td1" style="width:10%">{{item.jsxm}}</view>
+                        <view class="td1" style="width:10%">{{item.sxrs}}/{{item.xxrs}}</view>
+                    </view>
+                </block>
+            </view>
+        </block>
+        <block wx:else>
+            <view style="text-align: center;color:red">未到报名时间</view>
+        </block>
+    </scroll-view>
+</view>

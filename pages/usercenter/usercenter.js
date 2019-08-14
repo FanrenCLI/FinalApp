@@ -9,9 +9,11 @@ Page({
    */
   data: {
     name: "",
-    stu_id: ""
+    stu_id: "",
+    bj: "",
+    yx: ""
   },
-  sign_out:function(e){
+  sign_out: function (e) {
     wx.redirectTo({
       url: '../login/login'
     })
@@ -20,6 +22,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      name: app.globalData.username,
+      stu_id: app.globalData.stuid,
+      bj: app.globalData.bj,
+      yx: app.globalData.yx
+    })
   },
 
   /**

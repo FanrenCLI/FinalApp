@@ -25,7 +25,6 @@ Page({
                         success: res => {
                             // 可以将 res 发送给后台解码出 unionId
                             app.globalData.userInfo = res.userInfo
-
                             // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
                             // 所以此处加入 callback 以防止这种情况
                             if (this.userInfoReadyCallback) {
@@ -101,9 +100,13 @@ Page({
                             idcard:that.data.idcard
                         },
                         success: function (res) {
-                            console.log(res.data)
-                            if(res.data!='0'){
-                                app.globalData.localCookie=res.data
+                            if(res.data['学号']!=undefined){
+                                console.log(res.data)
+                                app.globalData.localCookie=res.data['cookie']
+                                app.globalData.stuid=res.data['学号']
+                                app.globalData.username=res.data['姓名']
+                                app.globalData.bj=res.data["班级"]
+                                app.globalData.yx=res.data["院系"]
                                 that.getUserInfomation();
                                 wx.hideToast({})
                             }else{
@@ -145,8 +148,13 @@ Page({
                             code: res.code,
                         },
                         success: function (res) {
-                            if(res.data!='0'){
-                                app.globalData.localCookie=res.data
+                            if(res.data['学号']!=undefined){
+                                console.log(res.data)
+                                app.globalData.localCookie=res.data['cookie']
+                                app.globalData.stuid=res.data['学号']
+                                app.globalData.username=res.data['姓名']
+                                app.globalData.bj=res.data["班级"]
+                                app.globalData.yx=res.data["院系"]
                                 that.getUserInfomation();
                                 wx.hideToast({})
                             }else{

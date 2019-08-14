@@ -1,9 +1,9 @@
 <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true" indicator-active-color="#FFF" indicator-color="rgba(255,255,255, .4)">
   <swiper-item>
-    <image src="../../image/b2.png" class='img_ins'></image>
+    <image src="../../image/b3.png" class='img_ins'></image>
   </swiper-item>
   <swiper-item>
-    <image src="../../image/b2.png" class='img_ins'></image>
+    <image src="../../image/b1.png" class='img_ins'></image>
   </swiper-item>
 </swiper>
 <view class='center_table'>
@@ -46,7 +46,7 @@
   </view>
   <view bindtap="learnblock">
     <image src="/image/daxue.jpg" mode="aspectFill" class="bue" />
-    <text>我的大学</text>
+    <text>你很重要</text>
   </view>
 </view>
 <view class="footview">我是有底线的！！</view>

@@ -1,11 +1,19 @@
 {
   "pages": [
-    "pages/main/main",
     "pages/login/login",
+    "pages/scholar/scholar",
+    "pages/heaven/heaven",
+    "pages/main/main",
+    "pages/changepwd/changepwd",
     "pages/curriculum/curriculum",
-    "pages/pubcourse/pubcourse",
+    "pages/curriculum/lesson",
     "pages/usercenter/usercenter",
-    "pages/grade/grade"
+    "pages/pubcourse/pubcourse",
+    "pages/grade/grade",
+    "pages/grade/offset_grade",
+    "pages/changeMajor/changeMajor",
+    "pages/sportcourse/sportcourse",
+    "pages/kcpj/kcpj"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,5 +37,9 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000
+  } 
+    
 }

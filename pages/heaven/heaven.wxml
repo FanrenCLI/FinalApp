@@ -1,0 +1,13 @@
+
+<view class="title_header">你的足迹  我的风景</view>
+<scroll-view scroll-y="true" class="history">
+    <view class="lastview" wx:for="{{contentlist}}">
+        <view class="LJView">
+            <view class="userinfo-avatar">
+                <image src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er2RuDvkxIkLq9v8cTbLUHfG80om2ca1icIf7kF0TcKS1PicRSguzXXrIOiaRzI48GYlrX8ibbDuPRVYw/132" style="height:30px;width:30px" />
+            </view>
+            <text>{{item.auth}}</text>
+        </view>
+        <view class="LUView">{{item.content}}</view>
+    </view>
+</scroll-view>

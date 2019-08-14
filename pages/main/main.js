@@ -21,34 +21,34 @@ Page({
       "id": 2,
       "dis": ''
     }, {
-      "url": "../main_detail/jwtz/jwtz",
-      "img": "tongzhi.png",
-      "name": '教务通知',
+      "url": "../sportcourse/sportcourse",
+      "img": "sp.png",
+      "name": '体育选课',
       "id": 3,
       "dis": ''
     }, {
-      "url": "../main_detail/dining/dining",
-      "img": "canting.png",
-      "name": '校园食堂',
+      "url": "../grade/offset_grade",
+      "img": "cj1.png",
+      "name": '冲抵成绩',
       "id": 4,
       "dis": ''
     }, {
-      "url": "../main_detail/discussion/discussion",
-      "img": "shequ.png",
-      "name": '社区讨论',
+      "url": "../kcpj/kcpj",
+      "img": "kcpj.png",
+      "name": '课程评教',
       "id": 5,
       "dis": ''
     }, {
-      "url": "../main_detail/leisureClass/leisureClass",
-      "img": "classes.png",
-      "name": '空闲教室',
-      "id": 6,
+      "url": "../changeMajor/changeMajor",
+      "img": "zzy.png",
+      "name": '转专业信息',
+      "id": 5,
       "dis": ''
-    }, {
-      "url": "../main_detail/more/more",
-      "img": "more.png",
-      "name": '更多',
-      "id": 7,
+    },{
+      "url": "../changepwd/changepwd",
+      "img": "mm.png",
+      "name": '修改密码',
+      "id": 6,
       "dis": ''
     }],
     weather:{},
@@ -56,12 +56,12 @@ Page({
   },
   happyblock:function(res){
     wx.navigateTo({
-      url:"../main_detail/happyblock/happyblock",
+      url:"../heaven/heaven",
     })
   },
   learnblock:function(res){
     wx.navigateTo({
-      url:"../main_detail/learnblock/learnblock"
+      url:"../scholar/scholar"
     })
   },
   onLoad:function(res){

@@ -8,9 +8,11 @@ App({
   // },
   globalData: {
     mainurl:"https://fanrencli.cn/",
+    userinfo:"",
     stuid:"",
     username:"",
-    pwd:"",
+    bj:"",
+    yx:"",
     localCookie:''
   }
 })

@@ -2,7 +2,7 @@ let app = getApp();
 
 Page({
   data: {
-    termlist: ['大一上学期', '大一下学期', '大二上学期', '大二下学期', '大三上学期', '大三下学期', '大四上学期', '大四下学期',"大五上学期","大五下学期"],
+    termlist: ['大一上学期', '大一下学期', '大二上学期', '大二下学期', '大三上学期', '大三下学期', '大四上学期', '大四下学期', '大五上学期', '大五下学期'],
     gradelist: [],
     gradeToollist: [],
     flag: false
@@ -10,13 +10,13 @@ Page({
   onLoad: function (options) {
     if (!this.data.flag) {
       var that = this;
-      wx.setNavigationBarTitle({ title: '成绩查询' });
+      wx.setNavigationBarTitle({ title: '冲抵成绩' });
       wx.showToast({
         title: '查询中...',
         icon: 'loading'
       });
       wx.request({
-        url: app.globalData.mainurl + 'grade',
+        url: app.globalData.mainurl + 'offsetgrade',
         data: {
           // cookie:'ASP.NET_SessionId=btb5g2rtdmddl2berxzlvcyb'
           cookie: app.globalData.localCookie

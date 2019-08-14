@@ -1,0 +1,21 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="tip" hover-class="none" hover-stop-propagation="false">
+            密码一旦修改，请牢牢记住
+        </view>
+        <view class="section">
+            <input type="text" placeholder="旧密码" auto-focus="{{true}}" bindinput="oldpwd" />
+        </view>
+        <view class="section">
+            <input type="text" placeholder="新密码(由数字和英文组成)" password="{{true}}" bindinput="pwdinput" />
+        </view>
+        <view class="section">
+            <input type="text" placeholder="确认密码" password="true" bindinput="pwd1input" />
+        </view>
+        <view class="section">
+            <view class="btn-area">
+                <button type="primary" bindtap="Changepwd">修改密码</button>
+            </view>
+        </view>
+    </view>
+</view>

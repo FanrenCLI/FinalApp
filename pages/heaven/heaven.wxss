@@ -1,0 +1,67 @@
+/**index.wxss**/
+page{
+  background-image: url("https://fanrencli.cn/10.png")
+}
+  
+  .history text{
+   font-size: 15px;
+   height:40px;
+   font-weight: 550;
+   line-height: 35px;
+   color: #4e4e4e9d;
+   margin-left: 10px;
+  }
+  .history{
+    height: 100%;
+    width: 100%;
+   margin:10px;
+   font-size:14px;
+   line-height:40px;
+   word-break:break-all;
+  }
+  .userinfo-avatar {  
+    overflow:hidden;  
+    display: block;  
+    width: 30px;  
+    height: 30px; 
+    border-radius: 50%;  
+    border: 2px solid #fff;  
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+  }
+  .lastview{
+    margin-top: 10rpx;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    width:90%;
+    border-radius: 20rpx;  
+    border: 2px solid #fff;  
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+  }
+  .LJView{
+    display:flex;
+    width: 90%
+  }
+  .LUView{
+      width:92%;
+      padding: 2px;
+      line-height: 20px;
+      border:2px solid rgba(0, 132, 255, 0.219);
+      border-radius: 5px;
+  }
+
+  .title_header{
+    height: 30px;
+    margin: 5px 5px;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 550;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+    border: 2px solid #fff;  
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+  }
+

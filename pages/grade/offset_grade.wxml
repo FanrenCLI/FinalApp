@@ -1,0 +1,25 @@
+<view class="table1">
+    <scroll-view class="" scroll-x="true">
+        <view class="tr1 bg-w1">
+            <view class="th1" style="width:39%">科目</view>
+            <view class="th1" style="width:10%">学分</view>
+            <view class="th1" style="width:17%">平时成绩</view>
+            <view class="th1" style="width:17%">考试成绩</view>
+            <view class="th1" style="width:17%">综合成绩</view>
+        </view>
+        <block wx:for="{{termlist}}" wx:for-item="Outitem" wx:for-index="idx">
+            <view class="tr2">{{Outitem}}</view>
+            <block wx:for="{{gradelist}}" wx:for-item="Inneritem">
+                <block wx:if="{{gradeToollist[idx] == Inneritem.xq}}">
+                    <view class="tr1">
+                        <view class="td1" style="width:39%">{{Inneritem.kcmc}}</view>
+                        <view class="td1" style="width:10%">{{Inneritem.xf}}</view>
+                        <view class="td1" style="width:17%">{{Inneritem.pscj}}</view>
+                        <view class="td1" style="width:17%">{{Inneritem.qmcj}}</view>
+                        <view class="td1" style="width:17%">{{Inneritem.zpcj}}</view>
+                    </view>
+                </block>
+            </block>
+        </block>
+    </scroll-view>
+</view>
