@@ -18,7 +18,6 @@ Page({
       wx.request({
         url: app.globalData.mainurl + 'grade',
         data: {
-          // cookie:'ASP.NET_SessionId=btb5g2rtdmddl2berxzlvcyb'
           cookie: app.globalData.localCookie
         },
         method: 'POST',
@@ -26,7 +25,8 @@ Page({
           "Content-Type": "application/x-www-form-urlencoded"
         },
         success(res) {
-          if (res.data != '0') {
+          console.log(res.data)
+          if (typeof res.data != 'string') {
             that.setData({
               gradelist: res.data
             })

@@ -7,12 +7,12 @@ App({
   //   wx.setStorageSync('logs', logs)
   // },
   globalData: {
-    mainurl:"https://fanrencli.cn/",
+    mainurl:"",
     userinfo:"",
     stuid:"",
     username:"",
-    bj:"",
-    yx:"",
+    bj:"地理信息161",
+    yx:"地理科学学院",
     localCookie:''
   }
 })

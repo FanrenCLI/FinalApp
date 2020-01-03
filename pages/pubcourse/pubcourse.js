@@ -3,10 +3,8 @@ let app = getApp();
 Page({
     data: {
         xqj: 0,
-        leisureClass: [
-        ],
-        myleisureClass: [
-            ],
+        leisureClass: [],
+        myleisureClass: [],
     },
     onLoad: function (e) {
         var that = this
@@ -22,9 +20,11 @@ Page({
             header: { 'content-type': 'application/x-www-form-urlencoded' },
             method: 'POST',
             success: (res) => {
-                that.setData({
-                    leisureClass: res.data
-                })
+                if (typeof res.data != "string") {
+                    that.setData({
+                        leisureClass: res.data
+                    })
+                }
             },
             fail: () => { console.log('failure') },
         });
@@ -36,9 +36,9 @@ Page({
             header: { 'content-type': 'application/x-www-form-urlencoded' },
             method: 'POST',
             success: (res) => {
-                if (res.data.length != 0) {
+                if (typeof res.data != "string") {
                     that.setData({
-                        myleisureClass: res.data
+                        leisureClass: res.data
                     })
                 }
 
@@ -91,7 +91,7 @@ Page({
                 } else {
                     wx.showToast({
                         title: '不可报名',
-                        icon:"none",
+                        icon: "none",
                         duration: 1500,
                     });
                 }

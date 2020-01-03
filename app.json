@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/main/main",
     "pages/login/login",
     "pages/scholar/scholar",
     "pages/heaven/heaven",
-    "pages/main/main",
     "pages/changepwd/changepwd",
     "pages/curriculum/curriculum",
     "pages/curriculum/lesson",

@@ -21,7 +21,7 @@ Page({
             header: { 'content-type': 'application/x-www-form-urlencoded' },
             method: 'POST',
             success: (result) => {
-                if (result.data != 'failure') {
+                if (typeof result.data != "string") {
                     that.setData({
                         ablemajor: result.data
                     })
@@ -44,7 +44,7 @@ Page({
             header: { 'content-type': 'application/x-www-form-urlencoded' },
             method: 'POST',
             success: (result) => {
-                if (result.data != 'failure') {
+                if (typeof result.data !="string") {
                     that.setData({
                         mymajor: result.data
                     })
@@ -68,7 +68,7 @@ Page({
             method: 'POST',
             success: (result) => {
                 // 当用户没有转专业的信息，则会返回500信息，此时length为几百
-                if (result.data != 'failure' && result.data.length<5) {
+                if (typeof result.data!= "string") {
                     that.setData({
                         majorgrade: result.data
                     })
